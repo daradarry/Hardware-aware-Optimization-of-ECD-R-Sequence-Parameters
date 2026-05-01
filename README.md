@@ -43,7 +43,7 @@ Recall that $\langle \beta |\hat{N}|\beta\rangle = \beta^2$, where $\hat{N} = \h
 
 The cost/fidelity function for gate ECD is defined as 
 
-\[ \mathcal{F}= 1-\left|\frac{1}{\text{Tr}(P)}\text{Tr}(PU^\dagger_{\text{target}}U_{\text{ECD}})\right|^2\]
+$$ \mathcal{F}= 1-\left|\frac{1}{\text{Tr}(P)}\text{Tr}(PU^\dagger_{\text{target}}U_{\text{ECD}})\right|^2 $$
 
 where $P$ is the projection unto the Hilbert space. $U_{ECD}$ is defined as follows
 
