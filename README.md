@@ -4,7 +4,9 @@
 $$ H = -\frac{\chi}{2}\hat{a}^\dagger \hat{a}\hat{\sigma}_z - \frac{\chi'}{2}\hat{a}^\dagger\hat{a}^\dagger\hat{a}\hat{a}\hat{\sigma}_z - K_s\hat{a}^\dagger\hat{a}^\dagger\hat{a}\hat{a} $$
 
 Note that $\hat{n}^2 = \hat{n} + \hat{a}^\dagger\hat{a}^\dagger\hat{a}\hat{a}$ (i.e.,   $\hat{n}^2 \equiv\hat{a}^\dagger\hat{a}^\dagger\hat{a}\hat{a}$),  since the $\hat{n}$ term will be combined with the other Hamiltonian terms. Hence the Hamiltonian above describes 
+
 $$ H \equiv \frac{\chi}{2}\hat{n}\hat{\sigma}_z - \frac{\chi'}{2}\hat{n}^2\hat{\sigma}_z- K_s\hat{n}^2$$ 
+
 where $\chi$ is the first-order Dispersive shift, $\chi'$ is the second-order correction to the dispersive shift and $K_s$ is the Kerr self nonlinearity.
 
 
@@ -22,6 +24,7 @@ $$\text{ECD}(\beta) = D(\beta/2)|e\rangle |g\rangle + D(-\beta/2)|g\rangle |e\ra
 where $\beta\in \mathbb{C}$ and $D(\alpha) = e^{\alpha \hat{a}^\dagger- \alpha^*\hat{a}}$.
 
 Define arbitrary rotation as 
+
 $$ 
 R_\varphi(\theta) = \exp{\left[-i\frac{\theta}{2}(\sigma_x\cos(\varphi)+ \sigma_y\sin(\varphi))\right]} = \cos(\theta/2)I - i[\sigma_x\cos(\varphi)+ \sigma_y\sin(\varphi)]\sin(\theta/2).$$
  
@@ -30,7 +33,9 @@ where the right hand side is by the Euler identity since $[\sigma_x\cos(\varphi)
 The ECD and Rotation gate form a universal gateset as seen in https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.77.513
 
 From above reference, the an ECD($\beta$) is decomposed into (hardware) gates (of 4 Displacements and one $\pi$ gate on the Transmon) such that 
+
 $$\text{ECD}(\beta) \approx \text{ECD}(2i\alpha\sin(\chi T/2))$$
+
 where $\chi$ is the dispersive coupling, $T$ is the total gate duration. Hence, the displacement in the cavity has a radius $\chi T \alpha$. Hence, from dimension analysis,  $\beta\sim \mu Hz $ since $\chi\sim KHz$, and $T \sim ns$. 
 
 Recall that $\langle \beta |\hat{N}|\beta\rangle = \beta^2$, where $\hat{N} = \hat{a}^\dagger\hat{a}$. Hence, for the state $|\beta\rangle$ in the cavity the average number of photons is $|\beta|^2$ .i.e. If the number of photons feasible on a hardware is $\sim 30$, then the expected displacement distance is $\sim 5.477$.
