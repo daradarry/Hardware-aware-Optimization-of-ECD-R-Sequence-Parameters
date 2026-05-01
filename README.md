@@ -45,10 +45,3 @@ $$ U_{\text{ECD}} = D(\beta_{L+1})R_{\varphi_{L+1}}(\theta_{L+1})\cdot\text{ECD}
 
 
 Note the $P$ is the identity operator in this case since we want to consider the space of dimension $N_{\text{trunc}}$. 
-
-To define the gradient for the cost function $\mathcal{F}$, apply the Parameter-shift Rule (as in https://pennylane.ai/qml/glossary/parameter_shift):
-$$ \nabla_{\gamma_i} \mathcal{F}(\vec{\gamma}) = \frac{\mathcal{F}(\gamma_i + \varepsilon) - \mathcal{F}(\gamma_i - \varepsilon)}{2\sinh(\varepsilon)}$$
-
-where $\vec{\gamma} = (\vec{\beta}, \vec{\varphi}, \vec{\theta})$ for arbitrary  $\gamma_i$ and any $\varepsilon>0$.
-
-Theoretically, the expected number of blocks to reach 'good' fidelity = $((2N_{trunc})^2-1)/4 = N_{trunc}^2- 1/4 \sim \mathcal{O}(N_{trunc}^2)$.
