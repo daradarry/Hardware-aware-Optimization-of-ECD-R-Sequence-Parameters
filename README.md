@@ -1,4 +1,4 @@
-# Hardware-aware-Optimization-of-ECD-R-Sequence-Parameters
+# Leakage-aware-Optimization-of-ECD-R-Sequence-Parameters
 ## Free Hamiltonian
 
 $$ H = -\frac{\chi}{2}\hat{a}^\dagger \hat{a}\hat{\sigma}_z - \frac{\chi'}{2}\hat{a}^\dagger\hat{a}^\dagger\hat{a}\hat{a}\hat{\sigma}_z - K_s\hat{a}^\dagger\hat{a}^\dagger\hat{a}\hat{a} $$
