@@ -43,6 +43,18 @@ Recall that $\langle \beta |\hat{N}|\beta\rangle = \beta^2$, where $\hat{N} = \h
 
 The cost/fidelity function for gate ECD is defined as 
 
+
+
+the loss function is defined 
+\begin{equation}
+\begin{split}
+L =\tfrac{1}{2} ||\Op{A}&-\Op{P}_d\Op{U}_{ECD}\Op{P}_d||_F^2 \\
+&+ \frac{1}{2} \sum_{r=1}^\ell \left[\sum_{k=d_T-\tilde{p}}^{d_T-1}e^{(k+1-d_T)} \Braket{s_r|\Op{Q}_{k+1}|s_r}\right]
+\end{split}
+\label{eqn:loss}
+\end{equation}
+where $\ell$ is the number of blocks, $\ket{s_\ell}=U_\ell\cdots U_1\ket{0},~\Op{A}$ is the arbitrary unitary, $||\Op{O}||_F^2= \text{Tr}(\aOp{O}\Op{O})/d $ is the weighted Frobenius norm and $\Op{P}_d$ is the projection onto computational subspace of dimension $d$.  For $b$ buffer levels, the total dimension $d_T=d+b$  and $\set{\Op{Q}_k,\; k= 0,1,\ldots }$ are projections onto the Fock states $\set{\ket{k}}$ (i.e. the Fock levels in the conditional displacement operators composed in $U_{ECD}$ are all truncated to $d_T$, hence, $U_{ECD} \in \C ^{2d_T\times 2d_T}$
+
 $$ \mathcal{F}= 1-\left|\frac{1}{\text{Tr}(P)}\text{Tr}(PU^\dagger_{\text{target}}U_{\text{ECD}})\right|^2 $$
 
 where $P$ is the projection unto the Hilbert space. $U_{ECD}$ is defined as follows
