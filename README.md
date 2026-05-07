@@ -36,7 +36,7 @@ From above reference, the an ECD($\beta$) is decomposed into (hardware) gates (o
 
 $$\text{ECD}(\beta) \approx \text{ECD}(2i\alpha\sin(\chi T/2))$$
 
-where $\chi$ is the dispersive coupling, $T$ is the total gate duration. Hence, the displacement in the cavity has a radius $\chi T \alpha$. Hence, from dimension analysis,  $\beta\sim \mu Hz $ since $\chi\sim KHz$, and $T \sim ns$. 
+where $\chi$ is the dispersive coupling, $T$ is the total gate duration. Hence, the displacement in the cavity has a radius $\chi T \alpha$. Hence, from dimension analysis,  $\beta\sim \mu Hz$ since $\chi\sim KHz$, and $T \sim ns$. 
 
 Recall that $\langle \beta |\hat{N}|\beta\rangle = \beta^2$, where $\hat{N} = \hat{a}^\dagger\hat{a}$. Hence, for the state $|\beta\rangle$ in the cavity the average number of photons is $|\beta|^2$ .i.e. If the number of photons feasible on a hardware is $\sim 30$, then the expected displacement distance is $\sim 5.477$.
 
@@ -49,4 +49,4 @@ the loss function is defined
 
 $$ L =\frac{1}{2} ||\hat{A}-\hat{P}_d\hat{U}_{ECD}\hat{P}_d||_F^2  +  \frac{1}{2} \sum_{r=1}^\ell \sum_{k=d_T-\tilde{p}}^{d_T-1}e^{(k+1-d_T)}\braket{s_r|\hat{Q}_{k+1}|s_r}$$
 
-where $\ell$ is the number of blocks, $\ket{s_\ell}=U_\ell\cdots U_1\ket{0}$,  $\hat{A}$ is the arbitrary unitary, $||\hat{O}||_F^2= \text{Tr}(\hat{O}^\dagger\hat{O})/d$ is the weighted Frobenius norm and  $\hat{P}_d$  is the projection unto computational subspace of dimension $d$. For $b$ buffer levels, the total dimension $d_T=b+b$ and $\{\hat{Q}_k, k= 0,1,\ldots\}$ are projections onto the Fock state  $\{\ket{k}\}$ (i.e. the Fock levels in the conditional displacement operators composed in $\text{ECD}$ are all truncated  to $d_T$, hence, $\text{ECD} \in \mathbb{C}^{2d_T\times 2d_T}$).
+where $\ell$ is the number of blocks, $\ket{s_\ell}=U_\ell\cdots U_1\ket{0}$,  $\hat{A}$ is the arbitrary unitary, $||\hat{O}||_F^2= \text{Tr}(\hat{O}^\dagger\hat{O})/d$ is the weighted Frobenius norm and  $\hat{P}_d$  is the projection unto computational subspace of dimension $d$. For $b$ buffer levels, the total dimension $d_T=b+b$ and $\{\hat{Q}_k, ~k= 0,1,\ldots\}$ are projections onto the Fock state  $\{\ket{k}\}$ (i.e. the Fock levels in the conditional displacement operators composed in $\text{ECD}$ are all truncated  to $d_T$, hence, $\text{ECD} \in \mathbb{C}^{2d_T\times 2d_T}$).
