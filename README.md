@@ -50,3 +50,4 @@ the loss function is defined
 $$ L =\frac{1}{2} ||\hat{A}-\hat{P}_d\hat{U}_{ECD}\hat{P}_d||_F^2  +  \frac{1}{2} \sum_{r=1}^\ell \sum_{k=d_T-\tilde{p}}^{d_T-1}e^{(k+1-d_T)}\braket{s_r|\hat{Q}_{k+1}|s_r}$$
 
 where $\ell$ is the number of blocks, $\ket{s_\ell}=U_\ell\cdots U_1\ket{0}$,  $\hat{A}$ is the arbitrary unitary, $||\hat{O}||_F^2= \text{Tr}(\hat{O}^\dagger\hat{O})/d$ is the weighted Frobenius norm and  $\hat{P}_d$  is the projection unto computational subspace of dimension $d$. For $b$ buffer levels, the total dimension $d_T=b+b$ and $\{\hat{Q}_k, ~k= 0,1,\ldots\}$ are projections onto the Fock state  $\{\ket{k}\}$ (i.e. the Fock levels in the conditional displacement operators composed in $\text{ECD}$ are all truncated  to $d_T$, hence, $\text{ECD} \in \mathbb{C}^{2d_T\times 2d_T}$).
+
